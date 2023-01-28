@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cards{
+  display: flex;
+  width: 100%;
+  padding: 50px;
+ 
+}
+
+.cards .card{
+  background-color: rgb(153, 151, 151);
+  color: rgb(5, 58, 5);
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  box-shadow: -3px 0 10px rgba( 0,0,0, 0.3), -4px 0  10px rgba(0,0,0, 0.2), -5px 0  10px rgba(0,0,0, 0.1)  ;
+
+  transition: 0.3s ease;
+}
+
+.cards .card a{
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+.cards .card a:hover{
+  color:lightyellow;
+}
+
+.cards .card .header{
+  flex: 1;
+}
+
+.cards .card:hover {
+  margin-right: 80px;
+  transform: rotate(10deg) translateY(-25px);
+}
+
+.cards .card .header .date{
+  padding: 10px 0;
+
+}
+
+.cards .card .header .title{
+  font-size: 28px;
+}
+
+.cards .card .footer .autor a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cards .card .footer img{
+  width: 48px;
+  border-radius: 50%;
+}
+
+.cards .card [class*="element"]{
+  margin-left: -150px;
+}
+
+.element-1:hover,
+.element-2:hover{
+  margin-left: -130px;
+}
